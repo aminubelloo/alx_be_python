@@ -10,7 +10,13 @@ def main():
         shopping_list=[]
         while True:
             display_menu()
+            
             choice = input("Enter your choice:").strip()
+            if not choice.isdigit():
+             print("Invalid input. Please enter a number.")
+             continue  # Go back to the start of the loop
+
+             choice = int(choice)
 
            
             if choice == '1':
