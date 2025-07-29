@@ -1,5 +1,5 @@
 def display_menu():
-    print("Shopping List Manager")
+    print("\n***Shopping List Manager***")
     print("1. Add Item")
     print("2. Remove Item")
     print("3. View List")
@@ -43,7 +43,7 @@ def main():
                 break
         
             else:
-                 print("Invalid choice. Please try again.")
+                 print("\nInvalid choice. Please try again.")
 
 
 if __name__ == "__main__":
