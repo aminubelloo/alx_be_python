@@ -11,11 +11,11 @@ def main():
         while True:
             display_menu()
             choice = input("Enter your choice:").strip()
-            if not choice.isdigit():
-             print("Invalid input. Please enter a number.")
-             continue  # Go back to the start of the loop
-
-             choice = int(choice)
+            try:
+                choice = int(choice)
+            except ValueError:
+                print("Invalid input. Please enter a number.")
+            continue
 
            
             if choice == '1':
